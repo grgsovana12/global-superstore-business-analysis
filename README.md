@@ -21,7 +21,7 @@ The goal was to turn historical transaction data into actionable business insigh
 - Python
 - Tableau Public
 - Excel
-- Business Required Documentation (BRD)
+- Business Requirements Documentation (BRD)
 - Data Quality Testing
 
 ## Dataset Overview
@@ -49,7 +49,7 @@ Eight data quality checks were performed:
 |---|---|---|
 | DQ-001 | Completeness | PASS |
 | DQ-002 | Row ID Uniqueness | PASS |
-| DQ-003 | Data Validity | PASS |
+| DQ-003 | Date Validity | PASS |
 | DQ-004 | Shipping Date Sequence | PASS |
 | DQ-005 | Sales Validation | PASS |
 | DQ-006 | Zero Sales | FLAGGED | 
@@ -63,3 +63,46 @@ Eight data quality checks were performed:
 - Market Consistency: 10,378 records with mismatches between Market and Market2.
 
 Flagged results require further investigation and business clarification; they are not automatically classified as data errors.
+
+## Project Deliverables
+
+- Business Requirements Document (BRD)
+- Data Quality Test Cases
+- Business Analysis Report
+- SQL and Python analysis
+- Tableau dashboard
+
+## Tableau Dashboard
+
+[View Interactive Tableau Dashboard] (https://public.tableau.com/app/profile/sovana.gurung/viz/GlobalSuperstoreBusinessAnalysis_17928099899260/Dashboard1)
+
+## Repository Structure
+
+global-superstore-business-analysis/
+├── README.md
+├── documentation/
+│   ├── Business_Requirements_Document.pdf
+│   ├── Data_Quality_Test_Cases.pdf
+│   └── Business_Analysis_Report.pdf
+├── analysis/
+│   └── Global_Superstore_Analysis.ipynb
+├── dashboard/
+│   └── tableau_dashboard_link.txt
+└── images/
+    └── tableau_dashboard.png
+
+## Business Recommendations
+
+- Review discounting practices for products with consistently weak profitability.
+- Investigate loss-making products in the Tables sub-category.
+- Review geographic market mappings for consistency.
+- Validate flagged transactions and clarify business rules before using them in recurring reports.
+
+## Project Limitations
+
+This analysis is based on historical transaction data from 2011–2014. Observed relationships between discounts, shipping costs, and profitability are descriptive 
+and do not establish causation. Flagged data quality findings require business clarification.
+
+---
+
+**Project Focus:** Business Analysis | Data Quality Assurance | SQL | Python | Tableau
